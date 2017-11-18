@@ -16,17 +16,20 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-md-10">
-	  {% for b in block %}
-          <div class="panel panel-default">
+	  {% for b in blocks %}
+	  <div class="panel panel-default">
             <div class="panel-heading">
-              <a href="#" style="font-size: 16px;">{{ b.name }}</a>
-	      <span class="pull-right">{{ b.manager }}</span>
+              <a href="#" style="font-size:16px;">{{b.name}}</a>
+	      <span class="pull-right">{{b.manager_name}}</span>
             </div>
             <div class="panel-body">
-	     {{ b.desc }} 
+	      {{b.desc}}
             </div>
           </div>
 	  {% endfor %}
+	</div>
+	<div class="col-xs-12 col-md-2">
+	  <div class="well">个人中心</div>
 	</div>
     </div>
   </body>
