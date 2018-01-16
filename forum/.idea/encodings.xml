@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/article/admin.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/article/forms.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/article/templates/article_list.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/article/urls.py" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/article/views.py" charset="UTF-8" />

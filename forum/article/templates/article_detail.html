@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col-xs-12 col-md-12">
+    <ol class="breadcrumb">
+        <li><a href="/">首页</a></li>
+        <li class="active"><a href="article/list/{{b.id}}">{{ b.name }}</a></li>
+        <li class="active">{{a.title}}</li>
+    </ol>
+
+    <br />
+    <br />
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+              <th>标题</th>
+              <th>作者</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+              <td>{{ a.title }}</td>
+              <td>{{ a.content }}</td>
+          </tr>
+
+        </tbody>
+    </table>
+</div>
+{% endblock %}
