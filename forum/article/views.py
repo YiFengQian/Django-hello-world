@@ -24,7 +24,6 @@ def article_list(request,block_id):
     page_cnt = p.num_pages
     page_links = [i for i in range(page_no - 3,page_no + 4)
                   if i > 0 and i <= p.num_pages]
-    len(page_links) == page_cnt
     previous_link = page_links[0]-1
     next_link = page_links[-1]+1
     has_previous = previous_link > 0
@@ -32,7 +31,7 @@ def article_list(request,block_id):
     return render(request,"article_list.html",{"articles":articles_objs,"b":block,"page_cnt":page_cnt,
                                                "current_no":page_no,"page_links":page_links,
                                                "previous_link":previous_link,"next_link":next_link,
-                                               "previous":has_previous,"next":has_next,"len":len(page_links)})
+                                               "previous":has_previous,"next":has_next,"current":page_no})
 
 
 

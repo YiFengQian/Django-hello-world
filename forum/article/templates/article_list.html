@@ -42,24 +42,33 @@
     </li>
     {% endif %}
 
-    <li>
+    <li {% if current == page_links.0 %}      class="active"       {% endif %}>
         <a href="?page_no={{ page_links.0 }}">{{ page_links.0 }}</a>
     </li>
-    <li>
+
+    <li {% if current == page_links.1 %}      class="active"       {% endif %}>
         <a href="?page_no={{ page_links.1 }}">{{ page_links.1 }}</a>
     </li>
-    <li>
+
+    <li {% if current == page_links.2 %}      class="active"       {% endif %}>
         <a href="?page_no={{ page_links.2 }}">{{ page_links.2 }}</a>
     </li>
-    <li>
+
+    <li {% if current == page_links.3 %}       class="active"      {% endif %}>
         <a href="?page_no={{ page_links.3 }}">{{ page_links.3 }}</a>
     </li>
-    <li>
+
+    {% if page_links.4 %}
+    <li {% if current == page_links.4 %}      class="active"       {% endif %}>
          <a href="?page_no={{ page_links.4 }}">{{ page_links.4 }}</a>
     </li>
-    <li>
+    {% endif %}
+
+    {% if page_links.5 %}
+    <li {% if current == page_links.5 %}     class="active"        {% endif %}>
         <a href="?page_no={{ page_links.5 }}">{{ page_links.5 }}</a>
     </li>
+    {% endif %}
 
     {% if next %}
     <li>
